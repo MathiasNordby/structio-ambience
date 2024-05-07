@@ -1,0 +1,21 @@
+{
+  "name": "structio-ambience",
+  "displayName": "Structio Ambience",
+  "description": "Structio Ambience mode provides a calm cyan themed darkmode to your VSC",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Structio Ambience",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Structio Ambience-color-theme.json"
+      }
+    ]
+  }
+}
