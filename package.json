@@ -14,7 +14,7 @@
       {
         "label": "Structio Ambience",
         "uiTheme": "vs-dark",
-        "path": "./themes/Structio Ambience-color-theme.json"
+        "path": "./themes/structio-ambience-color-theme.json"
       }
     ]
   }
