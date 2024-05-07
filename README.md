@@ -1,7 +1,5 @@
-# structio-ambience README
+# structio-ambience
 
-## Working with Markdown
-
-Structio Ambience is a simple VSC color theme
+Structio Ambience is a simple VSC color theme.
 
 **Enjoy!**
