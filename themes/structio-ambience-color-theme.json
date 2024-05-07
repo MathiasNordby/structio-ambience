@@ -2,16 +2,25 @@
   "name": "Structio Ambience",
   "colors": {
     "actionBar.toggledBackground": "#383a49",
-    "activityBarBadge.background": "#007acc",
+    "activityBarBadge.background": "#37a095",
+    "activityBarBadge.foreground": "#ffffff",
+    "activityBar.activeBorder": "#3ecdbe",
+    "activityBar.foreground": "#ffffff",
     "checkbox.border": "#6b6b6b",
-    "editor.background": "#1e1e1e",
+    "editor.background": "#2a2d30",
     "editor.foreground": "#d4d4d4",
-    "editor.inactiveSelectionBackground": "#3a3d41",
+    "editor.inactiveSelectionBackground": "#3a3d4100",
     "editor.selectionHighlightBackground": "#add6ff26",
     "editorIndentGuide.activeBackground1": "#707070",
     "editorIndentGuide.background1": "#404040",
     "input.placeholderForeground": "#a6a6a6",
+    "icon.foreground": "#3ecdbe",
     "list.activeSelectionIconForeground": "#ffffff",
+    "list.activeSelectionBackground": "#00ffff38",
+    "list.activeSelectionForeground": "#00ffff",
+    "list.inactiveSelectionBackground": "#00ffff38",
+    "list.inactiveSelectionForeground": "#00ffff",
+    "list.focusOutline": "#3ecdbf00",
     "list.dropBackground": "#383b3d",
     "menu.background": "#252526",
     "menu.border": "#454545",
@@ -21,9 +30,16 @@
     "sideBarSectionHeader.background": "#00000000",
     "sideBarSectionHeader.border": "#cccccc33",
     "sideBarTitle.foreground": "#bbbbbb",
-    "statusBarItem.remoteBackground": "#16825d",
+    "statusBar.background": "#42817e71",
+    "statusBarItem.remoteBackground": "#449795",
     "statusBarItem.remoteForeground": "#ffffff",
     "tab.lastPinnedBorder": "#cccccc33",
+    "tab.activeBackground": "#252525",
+    "tab.activeForeground": "#00fbffde",
+    "tab.activeBorderTop": "#00fbffde",
+    "tab.inactiveForeground": "#ffffff80",
+    "terminal.background": "#252526",
+    "terminal.foreground": "#c9c9c9",
     "terminal.inactiveSelectionBackground": "#3a3d41",
     "widget.border": "#303031"
     //"activityBar.activeBorder": "#ffffff",
@@ -336,8 +352,6 @@
     //"keybindingLabel.foreground": "#cccccc",
     //"keybindingTable.headerBackground": "#cccccc0a",
     //"keybindingTable.rowsBackground": "#cccccc0a",
-    //"list.activeSelectionBackground": "#04395e",
-    //"list.activeSelectionForeground": "#ffffff",
     //"list.deemphasizedForeground": "#8c8c8c",
     //"list.dropBetweenBackground": "#c5c5c5",
     //"list.errorForeground": "#f88070",
@@ -346,7 +360,6 @@
     //"list.focusOutline": "#007fd4",
     //"list.highlightForeground": "#2aaaff",
     //"list.hoverBackground": "#2a2d2e",
-    //"list.inactiveSelectionBackground": "#37373d",
     //"list.invalidItemForeground": "#b89500",
     //"list.warningForeground": "#cca700",
     //"listFilterWidget.background": "#252526",
@@ -561,14 +574,11 @@
     //"symbolIcon.typeParameterForeground": "#cccccc",
     //"symbolIcon.unitForeground": "#cccccc",
     //"symbolIcon.variableForeground": "#75beff",
-    //"tab.activeBackground": "#1e1e1e",
-    //"tab.activeForeground": "#ffffff",
     //"tab.activeModifiedBorder": "#3399cc",
     //"tab.border": "#252526",
     //"tab.dragAndDropBorder": "#ffffff",
     //"tab.inactiveBackground": "#2d2d2d",
-    //"tab.inactiveForeground": "#ffffff80",
-    //"tab.inactiveModifiedBorder": "#3399cc80",
+    //"tab.inactiveModifiedBorder": "#3399cc80"
     //"tab.unfocusedActiveBackground": "#1e1e1e",
     //"tab.unfocusedActiveForeground": "#ffffff80",
     //"tab.unfocusedActiveModifiedBorder": "#3399cc80",
@@ -855,13 +865,13 @@
     {
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#f69cfe"
+        "foreground": "#c992ff"
       }
     },
     {
-      "scope": "string.quoted",
+      "scope": ["string.quoted", "string.template"],
       "settings": {
-        "foreground": "#83d589"
+        "foreground": "#8adb6f"
       }
     },
     {
@@ -999,7 +1009,7 @@
     {
       "scope": "storage.type",
       "settings": {
-        "foreground": "#569CD6"
+        "foreground": "#b256d6"
       }
     },
     {
@@ -1146,13 +1156,14 @@
         "entity.name.operator.custom-literal"
       ],
       "settings": {
-        "foreground": "#DCDCAA"
+        "foreground": "#7382d7",
+        "fontStyle": "bold italic"
       }
     },
     {
       "scope": [
-        "support.class",
         "support.type",
+        "support.type.primitive",
         "entity.name.type",
         "entity.name.namespace",
         "entity.other.attribute",
@@ -1185,7 +1196,46 @@
         "storage.type.primitive.groovy"
       ],
       "settings": {
-        "foreground": "#4EC9B0"
+        "foreground": "#f2f2f2"
+      }
+    },
+    {
+      "scope": ["support.class"],
+      "settings": {
+        "foreground": "#18ffd1"
+      }
+    },
+    {
+      "scope": [
+        "support.type",
+        "storage.type.numeric.go",
+        "storage.type.byte.go",
+        "storage.type.boolean.go",
+        "storage.type.string.go",
+        "storage.type.uintptr.go",
+        "storage.type.error.go",
+        "storage.type.rune.go",
+        "storage.type.cs",
+        "storage.type.generic.cs",
+        "storage.type.modifier.cs",
+        "storage.type.variable.cs",
+        "storage.type.annotation.java",
+        "storage.type.generic.java",
+        "storage.type.java",
+        "storage.type.object.array.java",
+        "storage.type.primitive.array.java",
+        "storage.type.primitive.java",
+        "storage.type.token.java",
+        "storage.type.groovy",
+        "storage.type.annotation.groovy",
+        "storage.type.parameters.groovy",
+        "storage.type.generic.groovy",
+        "storage.type.object.array.groovy",
+        "storage.type.primitive.array.groovy",
+        "storage.type.primitive.groovy"
+      ],
+      "settings": {
+        "foreground": "#ffffff"
       }
     },
     {
@@ -1212,7 +1262,14 @@
         "entity.name.operator"
       ],
       "settings": {
-        "foreground": "#C586C0"
+        "foreground": "#a5743f"
+      }
+    },
+    {
+      "scope": ["comment.line", "comment.block"],
+      "settings": {
+        "foreground": "#8a8a8a",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1236,13 +1293,13 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#4fffed"
+        "foreground": "#3ecdbe"
       }
     },
     {
       "scope": ["variable.other.property"],
       "settings": {
-        "foreground": "#3ba89d"
+        "foreground": "#b3a44d"
       }
     },
     {
