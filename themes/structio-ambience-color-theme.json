@@ -887,7 +887,7 @@
         "entity.other.attribute-name.scss"
       ],
       "settings": {
-        "foreground": "#D7BA7D"
+        "foreground": "#8adb6f"
       }
     },
     {
@@ -1066,7 +1066,7 @@
         "source.coffee.embedded"
       ],
       "settings": {
-        "foreground": "#9CDCFE"
+        "foreground": "#3ecdbe"
       }
     },
     {
