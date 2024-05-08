@@ -1015,7 +1015,7 @@
     {
       "scope": ["storage.modifier", "keyword.operator.noexcept"],
       "settings": {
-        "foreground": "#569CD6"
+        "foreground": "#b256d6"
       }
     },
     {
@@ -1150,6 +1150,7 @@
     {
       "scope": [
         "entity.name.function",
+        "entity.name.type.class",
         "support.function",
         "support.constant.handlebars",
         "source.powershell variable.other.member",
